@@ -1,0 +1,114 @@
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Изучить основы языков программирования Julia и OpenModelica. Освоить
+библиотеки этих языков, которые используются для построения графиков и
+решения дифференциальных уравнений. Решить задачу о погоне.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+\begin{enumerate}
+\tightlist
+\item
+  Запишите уравнение, описывающее движение катера, с начальными
+  условиями для двух случаев (в зависимости от расположения катера
+  относительно лодки в начальный момент времени).
+\item
+  Постройте траекторию движения катера и лодки для двух случаев.
+\item
+  Найдите точку пересечения траектории катера и лодки.
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth,height=\textheight]{image/Screenshot_3.png}
+\caption{Выбор варианта}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux440ux430ux431ux43eux442ux44b}
+\begin{enumerate}
+\tightlist
+\item
+  Примем за момент отсчета времени момент первого рассеивания тумана.
+  Введем полярные координаты с центром в точке нахождения браконьеров и
+  осью, проходящей через катер береговой охраны. Тогда начальные
+  координаты катера (14.1; 0). Обозначим скорость лодки v.
+\item
+  Траектория катера должна быть такой, чтобы и катер, и лодка все время
+  были на одном расстоянии от полюса. Только в этом случае траектория
+  катера пересечется с траекторией лодки. Поэтому для начала катер
+  береговой охраны должен двигаться некоторое время прямолинейно, пока
+  не окажется на том же расстоянии от полюса, что и лодка браконьеров.
+  После этого катер береговой охраны должен двигаться вокруг полюса
+  удаляясь от него с той же скоростью, что и лодка браконьеров.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Выполнение работы (2)}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-2}
+\begin{enumerate}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Чтобы найти расстояние x (расстояние после которого катер начнет
+  двигаться вокруг полюса), необходимо составить следующие уравнение.
+  Пусть через время t катер и лодка окажутся на одном расстоянии x от
+  полюса. За это время лодка пройдет x, а катер 14.1+x (или 14.1−x, в
+  зависимости от начального положения катера относительно полюса).
+\end{enumerate}
+
+x1 = 141/49, x2 = 141/49
+\end{frame}
+
+\begin{frame}{Поиск тангенциальной скорости}
+\phantomsection\label{ux43fux43eux438ux441ux43a-ux442ux430ux43dux433ux435ux43dux446ux438ux430ux43bux44cux43dux43eux439-ux441ux43aux43eux440ux43eux441ux442ux438}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/Screenshot_6.png}
+\caption{Поиск тангенциальной скорости}\label{fig:002}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Решение}
+\phantomsection\label{ux440ux435ux448ux435ux43dux438ux435}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,height=\textheight]{image/Screenshot_7.png}
+\caption{Система решения}\label{fig:006}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,height=\textheight]{image/Screenshot_8.png}
+\caption{Решение}\label{fig:008}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Решение с помощью программ (1)}
+\phantomsection\label{ux440ux435ux448ux435ux43dux438ux435-ux441-ux43fux43eux43cux43eux449ux44cux44e-ux43fux440ux43eux433ux440ux430ux43cux43c-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,height=\textheight]{image/lab02_01.png}
+\caption{Решение 1}\label{fig:009}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Решение с помощью программ (2)}
+\phantomsection\label{ux440ux435ux448ux435ux43dux438ux435-ux441-ux43fux43eux43cux43eux449ux44cux44e-ux43fux440ux43eux433ux440ux430ux43cux43c-2}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,height=\textheight]{image/lab02_02.png}
+\caption{Решение 2}\label{fig:010}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Вывод}
+\phantomsection\label{ux432ux44bux432ux43eux434}
+Были изучены основы языков программирования Julia и OpenModelica.
+Освоены библиотеки этих языков, которые используются для построения
+графиков и решения дифференциальных уравнений. Поскольку OpenModelica не
+работает с полярными координатами, она пока что не была использована в
+данной лабораторной работе.
+\end{frame}
