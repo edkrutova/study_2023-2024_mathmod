@@ -1,0 +1,87 @@
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Изучить модели боевых действий Ланчестера. Применить их на практике для
+решения задания лабораторной работы.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+\begin{enumerate}
+[1)]
+\tightlist
+\item
+  Построить модель боевых действий между регулярными войсками на языках
+  Julia и OpenModelica;
+\item
+  Построить модель ведения боевых действий с участием регулярных войск и
+  партизанских отрядов на языках Julia и OpenModelica.
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth,height=\textheight]{image/Screenshot_3.png}
+\caption{Выбор варианта}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux440ux430ux431ux43eux442ux44b}
+Между страной Х и страной У идет война. Численность состава войск
+исчисляется от начала войны, и являются временными функциями x(t) и
+y(t). В начальный момент времени страна Х имеет армию численностью
+895000 человек, а в распоряжении страны У армия численностью в 577000
+человек. Для упрощения модели считаем, что коэффициенты a, b, c, h
+постоянны. Также считаем P(t) и Q(t) непрерывные функции.
+\end{frame}
+
+\begin{frame}{Выполнение работы (2)}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-2}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/Screenshot_5.png}
+\caption{Модель в виде системы}\label{fig:002}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Решение с помощью Julia (1)}
+\phantomsection\label{ux440ux435ux448ux435ux43dux438ux435-ux441-ux43fux43eux43cux43eux449ux44cux44e-julia-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/lab03_1.png}
+\caption{Случай 1}\label{fig:003}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Решение с помощью Julia (2)}
+\phantomsection\label{ux440ux435ux448ux435ux43dux438ux435-ux441-ux43fux43eux43cux43eux449ux44cux44e-julia-2}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/lab03_2.png}
+\caption{Случай 2}\label{fig:004}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Решение с помощью OpenModelica (1)}
+\phantomsection\label{ux440ux435ux448ux435ux43dux438ux435-ux441-ux43fux43eux43cux43eux449ux44cux44e-openmodelica-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/r1.png}
+\caption{Случай 1}\label{fig:005}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Решение с помощью OpenModelica (2)}
+\phantomsection\label{ux440ux435ux448ux435ux43dux438ux435-ux441-ux43fux43eux43cux43eux449ux44cux44e-openmodelica-2}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/r2.png}
+\caption{Случай 2}\label{fig:006}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Вывод}
+\phantomsection\label{ux432ux44bux432ux43eux434}
+Я построила по две модели на языках Julia и OpenModelica.Построение
+моделей боевых действий на языке OpenModelica занимает гораздо меньше
+строк и времени, чем аналогичное построение на языке Julia.
+\end{frame}
