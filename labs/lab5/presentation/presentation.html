@@ -1,0 +1,94 @@
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Изучить жесткую модель хищник-жертва и построить эту модель.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+Для модели «хищник-жертва»:
+
+\(\ \frac{dx}{dt}=-0.79x(t)+0.078x(t)y(t)\)
+
+\(\ \frac{dy}{dt}=0.77y(t)-0.076x(t)y(t)\)
+
+Постройте график зависимости численности хищников от численности жертв,
+а также графики изменения численности хищников и численности жертв при
+следующих начальных условиях: \$~x\_0=9, y\_0=18 \$ . Найдите
+стационарное состояние системы.
+
+В соответствии с формулой (Sn mod N)+1, где Sn --- номер студбилета, N
+--- количество заданий, я взяла вариант 37 (рис. {[}-@fig:001{]}).
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/Screenshot_3.png}
+\caption{Выбор варианта}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение работы}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux440ux430ux431ux43eux442ux44b}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,height=\textheight]{image/Screenshot_1.png}
+\caption{Код построения графика стационарного состояния на языке
+Julia}\label{fig:002}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение работы (1)}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-1}
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,height=\textheight]{image/lab05s_jl.png}
+\caption{Стационарное состояние на языке Julia}\label{fig:003}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,height=\textheight]{image/l05_s.png}
+\caption{Стационарное состояние на языке Modelica}\label{fig:004}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение работы (2)}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-2}
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,height=\textheight]{image/lab05ns1_jl.png}
+\caption{График численности хищников от численности жертвна языке
+Julia}\label{fig:005}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,height=\textheight]{image/l05_r.png}
+\caption{График численности хищников от численности жертв на языке
+Modelica}\label{fig:006}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Выполнение работы (3)}
+\phantomsection\label{ux432ux44bux43fux43eux43bux43dux435ux43dux438ux435-ux440ux430ux431ux43eux442ux44b-3}
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,height=\textheight]{image/lab05ns2_jl.png}
+\caption{График численности жертв и хищников от времени языке
+Julia}\label{fig:007}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,height=\textheight]{image/l05_r2.png}
+\caption{График численности жертв и хищников от времени на языке
+Modelica}\label{fig:008}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Вывод}
+\phantomsection\label{ux432ux44bux432ux43eux434}
+В итоге проделанной работы была изучена модель хищник-жертва, и мы
+построили график зависимости численности хищников от численности жертв,
+а также графики изменения численности хищников и численности жертв на
+языках Julia и OpenModelica.
+\end{frame}
