@@ -296,3 +296,13 @@ end lab05_2;
 [3] Решение дифференциальных уравнений: https://www.wolframalpha.com/
 
 [4] Модель Лотки—Вольтерры: https://math-it.petrsu.ru/users/semenova/MathECO/Lections/Lotka_Volterra.pdf
+
+$\ \begin{vmatrix}
+   & (3, 0) & (2, 1) & (1, 2) & (0, 3) \\
+  (4, 0) & 4 & 2 & 1 & 0 \\
+  (3, 1) & 1 & 3 & 0 & -1 \\
+  (2, 2) & -2 & 2 & 2 & -2 \\
+  (1, 3) & -1 & 0 & 3 & 1 \\
+  (0, 4) & 0 & 1 & 2 & 4 \\
+ \end{vmatrix} $ 
+
