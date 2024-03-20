@@ -1,0 +1,84 @@
+\begin{frame}{Цель работы}
+\phantomsection\label{ux446ux435ux43bux44c-ux440ux430ux431ux43eux442ux44b}
+Изучить и построить модель эффективности рекламы.
+\end{frame}
+
+\begin{frame}{Задание}
+\phantomsection\label{ux437ux430ux434ux430ux43dux438ux435}
+Постройте график распространения рекламы, математическая модель которой
+описывается следующим уравнением:
+
+\begin{enumerate}
+\item
+  \(\ \frac{dn}{dt}=(0.13 + 0.000013*n(t))*(N - n(t))\)
+\item
+  \(\ \frac{dn}{dt}=(0.000031 + 0.31*n(t))*(N - n(t))\)
+\item
+  \(\ \frac{dn}{dt}=(0.13*t + 0.31*cos(t)*n(t))*(N - n(t))\)
+\end{enumerate}
+
+При этом объем аудитории N=1140, в начальный момент о товаре знает 10
+человек. Для случая 2 определите в какой момент времени скорость
+распространения рекламы будет иметь максимальное значение.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth,height=\textheight]{image/Screenshot_3.png}
+\caption{Выбор варианта}\label{fig:001}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Случай 1:
+\(\ \frac{dn}{dt}=(0.13 + 0.000013*n(t))*(N - n(t))\)}
+\phantomsection\label{ux441ux43bux443ux447ux430ux439-1-fracdndt0.13-0.000013ntn---nt}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth,height=\textheight]{image/lab07_1.png}
+\caption{Julia}\label{fig:002}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth,height=\textheight]{image/1.png}
+\caption{Modelica}\label{fig:003}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Случай 2:
+\(\ \frac{dn}{dt}=(0.000031 + 0.31*n(t))*(N - n(t))\)}
+\phantomsection\label{ux441ux43bux443ux447ux430ux439-2-fracdndt0.000031-0.31ntn---nt}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth,height=\textheight]{image/lab07_2.png}
+\caption{Julia}\label{fig:004}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth,height=\textheight]{image/2.png}
+\caption{Modelica}\label{fig:005}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Случай 3:
+\(\ \frac{dn}{dt}=(0.13*t + 0.31*cos(t)*n(t))*(N - n(t))\)}
+\phantomsection\label{ux441ux43bux443ux447ux430ux439-3-fracdndt0.13t-0.31costntn---nt}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth,height=\textheight]{image/lab07_3.png}
+\caption{Julia}\label{fig:006}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth,height=\textheight]{image/3.png}
+\caption{Modelica}\label{fig:007}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Вывод}
+\phantomsection\label{ux432ux44bux432ux43eux434}
+В ходе выполнения лабораторной работы была изучена модель эффективности
+рекламы и были построены графики распространения рекламы для трех
+случаев на языках Julia и OpenModelica.
+\end{frame}
